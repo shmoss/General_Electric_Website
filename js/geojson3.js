@@ -40,7 +40,7 @@ console.log(geoJsonLayers)
 
 
 //add OSM base tilelayer
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
     	//set attribute info (source)
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
         //and add it to map
@@ -107,7 +107,7 @@ function pointToLayer(feature, latlng, attributes){
   	//console.log(attributes)
     //create marker style
     var options = {
-        fillColor: "#ffff32",
+        fillColor: "#ffb732",
         color: "#666600",
         weight: 1,
         opacity: .6,
